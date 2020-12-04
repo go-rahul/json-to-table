@@ -20,8 +20,23 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
-    ]
+      "react-app/jest",
+      "airbnb",
+      "airbnb/hooks",
+      "prettier/babel",
+      "prettier/flowtype",
+      "prettier/react",
+      "plugin:prettier/recommended"
+    ],
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": "error",
+      "import/prefer-default-export": "off",
+      "react/jsx-indent": ["error", "tab", {"checkAttributes": true, "indentLogicalExpressions": true}],
+      "react/jsx-indent-props": ["error", "tab"]
+    }
   },
   "browserslist": {
     "production": [
@@ -34,5 +49,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.2.0",
+    "prettier": "^2.2.1"
   }
 }
