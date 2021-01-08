@@ -1,5 +1,6 @@
 import React from "react";
+import { DirtyView } from "./jsonEditor/DirtyView";
 
 export function App() {
-	return <h1>Hello, World!</h1>;
+	return <DirtyView />;
 }

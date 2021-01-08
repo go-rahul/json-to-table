@@ -1,0 +1,13 @@
+.editor {
+    display: block;
+    width: calc(50vw - 2 * 20px);
+    height: calc(100vh - 2 * 20px);
+
+    margin: 20px;
+
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+
+    resize: horizontal;
+}
