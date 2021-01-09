@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { JsonEditor } from "./jsonEditor/JsonEditor";
 
 export function App() {
-	return <JsonEditor />;
+	// State
+	const [jsonObjsStr, setJsonObjsStr] = useState("");
+
+	// DOM
+	return (
+		<JsonEditor jsonObjsStr={jsonObjsStr} setJsonObjsStr={setJsonObjsStr} />
+	);
 }
