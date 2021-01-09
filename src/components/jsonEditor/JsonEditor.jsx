@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./dirty.module.css";
+import styles from "./editor.module.css";
 
-export function DirtyView() {
+export function JsonEditor() {
 	return (
 		<textarea
 			className={styles.editor}
